@@ -9,7 +9,7 @@
 
 Name:		mingw32-pcre
 Version:	8.10
-Release:	2%{?dist}.4
+Release:	2%{?dist}.5
 Summary:	MinGW Windows pcre library
 
 Group:		Development/Libraries
@@ -85,6 +85,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS COPYING LICENCE NEWS README ChangeLog
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 8.10-2.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
